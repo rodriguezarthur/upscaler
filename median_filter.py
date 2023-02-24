@@ -54,9 +54,9 @@ def medianfilter(t):
             r, g, b = [], [], []
             v = voisin2(t,i,j)
             for pixel in v:
-                r.append(pixel[2])
+                r.append(pixel[0])
                 g.append(pixel[1])
-                b.append(pixel[0])
+                b.append(pixel[2])
             m[i][j][0] = mediane(tri_rapide(r))
             m[i][j][1] = mediane(tri_rapide(g))
             m[i][j][2] = mediane(tri_rapide(b))
